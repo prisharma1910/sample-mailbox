@@ -1,0 +1,32 @@
+.nav-container{
+    list-style: none;
+    padding: 0;
+}
+
+.nav-container li{
+    padding: 10px 20px;
+    color: #aaabae;
+    z-index: 2;
+    border-bottom: 1px solid rgba(69, 74, 84, 0.7);
+}
+
+.nav-container li span{
+    padding-left: 1em;
+}
+
+.profile-sec{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container .text{
+    padding-left: 0;    
+}
+
+.nav-container .selected{
+    border-left: 6px solid green;
+}
+
+.selected li{
+    list-style: none;
+}

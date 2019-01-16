@@ -1,0 +1,206 @@
+
+.main-container{
+    display: flex;    
+    padding-top: 1em;
+    padding-left: 1em;
+    background-color: #EBEDF0;
+    flex-direction: row;
+}
+
+.expanded{
+    
+}
+
+.not-expanded{
+    
+}
+
+.menu{
+    flex-direction: column;
+    display: flex;
+    padding-left:1em;
+    margin-right: 2em;
+    flex-grow: 1;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.compose_button{
+    padding: 0.5em 2em 0.5em 2em;
+    color: white;
+    background-color: #00a651;
+    font-size: small;
+    font-stretch: extra-expanded;
+    margin-bottom: 1em;
+}
+
+.menu-ul-headers{
+    font-size: smaller;
+    font-weight: 600;
+    margin-top: 1.5em;
+    color:#373e4a;
+}
+
+.menu ul li{
+    padding: 0.2em 0.5em 0.2em 0;
+    color:#373e4a;
+    border-bottom: 1px solid white;
+}
+
+.menu ul li i{
+    margin-right: 0.5em;
+    font-size: small;
+}
+.one{color:darkgreen;}
+.two{color: red;}
+.three{ color: darkblue;}
+.four{color: lightskyblue;}
+.five{color: yellow;}
+
+.menu-bullets{
+    float: left;
+    background-color: white;
+    padding: 0.4em;
+    font-size: smaller;
+    margin:0 0.5em 0.5em 0;
+}
+
+.menu-bullets i{
+    font-size: smaller;    
+}
+
+.bullet-container{
+    width: 150px;
+}
+
+.email-list{
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:1em 0 0 1em;
+}
+
+.email-list-title{
+    font-size: larger;
+    font-stretch: extra-expanded;
+    font-weight: 600;
+}
+
+.email-search{
+float: right;
+}
+
+.email-search button{
+    color: white;
+    background-color: #00a651;
+    padding: 0.25em;
+    border: 0;
+}
+
+.email-header, .email-sub-header{
+    margin-bottom: 1em;
+}
+
+.email-sub-header i{
+    background-color: white;
+    color:#8c8c8c;
+    border:0;
+    padding-right: 0.1em;
+}
+
+.email-sub-header button{
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    margin: 0;
+    background-color: white;
+    border: 0.5px solid #f1ebeb;
+    border-radius: 1px;
+    margin: 0.4em;
+    color:#8c8c8c;
+}
+
+.email-move-btn{
+    float:right;
+}
+
+.email-move-btn button{
+    margin-left: 0;
+    margin-right: 0; 
+}
+
+.email-list table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.email-list table tr{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.email-list table td{
+  padding: 0.5em;
+}
+
+.checkbox-custom {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+}
+
+.checkbox-custom:after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+}
+
+.checkbox-custom[type=checkbox]:before {
+    background: #00a651 url("http://i.imgur.com/dR1TM0y.png");
+    background-size: 10px 8px;
+    background-repeat: no-repeat;
+    background-position: 3px 4px;
+    position: absolute;
+    left: 2px;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    color: #00a651;
+}
+
+.checkbox-custom[type=checkbox]:checked:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    opacity: 1;
+    left: 0px;
+    border: 1px solid #00a651;
+    border-radius: 2px;
+}
+
+.email-list table tbody tr td:first-child{
+    width: 1.5em;
+}
+
+.bold{
+    font-weight: bold;
+}
