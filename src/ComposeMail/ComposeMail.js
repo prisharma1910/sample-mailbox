@@ -63,12 +63,26 @@ class ComposeMail extends Component {
     return (
       <div className="compose">
         <h2>Compose Email</h2>
-        <span>
-          <label>To : </label><input name='to' value={this.state.to} onChange={this.updateTo} />
-        </span>
-        <span><label>Cc : </label><input name='cc' value={this.state.cc} onChange={this.updateCc} /></span>
-        <span><label>Subject : </label><input name='subject' value={this.state.subject} onChange={this.updateSubject} /></span>
-        <span><label>Text : </label><input name='text' value={this.state.text} onChange={this.updateText} /></span>
+        <table>
+          <tbody>
+          <tr>
+            <td><label>To : </label></td>
+            <td><input name='to' value={this.state.to} onChange={this.updateTo} /></td>
+          </tr>
+          <tr>
+            <td><label>Cc : </label></td>
+            <td><input name='cc' value={this.state.cc} onChange={this.updateCc} /></td>
+          </tr>
+          <tr>
+            <td><label>Subject : </label></td>
+            <td><input name='subject' value={this.state.subject} onChange={this.updateSubject} /></td>
+          </tr>
+          <tr>
+            <td><label>Text : </label></td>
+            <td><input name='text' value={this.state.text} onChange={this.updateText} /></td>
+          </tr>
+          </tbody>
+        </table>
         <span>
           <button onClick={this.sendMail}> Send Email</button>
           <button onClick={this.props.toggleCompose}> Cancel</button>

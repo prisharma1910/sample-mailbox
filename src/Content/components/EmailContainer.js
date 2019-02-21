@@ -12,8 +12,8 @@ class EmailContainer extends Component {
     this.refreshData();
   }
 
-  componentDidUpdate(prevProps){
-    if(this.props.menuItemToshow !== prevProps.menuItemToshow){
+  componentDidUpdate(prevProps) {
+    if (this.props.menuItemToshow !== prevProps.menuItemToshow) {
       this.refreshData();
     }
   }
@@ -30,10 +30,10 @@ class EmailContainer extends Component {
 
   onSelection = (i) => {
     let newSelection = this.state.selected;
-    if(newSelection.indexOf(i) > -1){
+    if (newSelection.indexOf(i) > -1) {
       let id = this.state.selected.indexOf(i);
-      newSelection.splice(id,1);
-    }else{
+      newSelection.splice(id, 1);
+    } else {
       newSelection.push(i);
     }
     this.setState({
@@ -44,7 +44,7 @@ class EmailContainer extends Component {
   onDelete = () => {
     const allData = this.fetchData();
     let data = allData[this.props.userId];
-    if(Object.keys(data).length < 1){
+    if (Object.keys(data).length < 1) {
       return;
     }
     this.state.selected.forEach(id => {
@@ -72,11 +72,11 @@ class EmailContainer extends Component {
 
   render() {
     let emaildata = [];
-    const { data, selected }  = this.state;
+    const { data, selected } = this.state;
     let unread = 0;
 
-    Object.keys(data).forEach((id)=> {
-      emaildata.push(<EmailList key={id} content={data[id]} updateStatus={() => this.updateEmailStatus(id)} onSelection={() => this.onSelection(id)} checked={selected.indexOf(id) > -1 ? true : false}/>);
+    Object.keys(data).forEach((id) => {
+      emaildata.push(<EmailList key={id} content={data[id]} updateStatus={() => this.updateEmailStatus(id)} onSelection={() => this.onSelection(id)} checked={selected.indexOf(id) > -1 ? true : false} />);
       if (!data[id].read) {
         unread++;
       }
@@ -87,26 +87,26 @@ class EmailContainer extends Component {
         <div className="email-header">
           <span className="email-list-title">{this.props.menuItemToshow} {unread > 0 ? `( ${unread} )` : ''}  </span>
           <div className="email-search">
-          <input placeholder='search email' />
-          <button > search</button>
-            </div>
+            <input placeholder='search email' />
+            <button > search</button>
+          </div>
         </div>
         <div className="email-sub-header">
-          <button onClick={this.refreshData}> <i className="fa fa-refresh" ></i>Refresh</button>
+          <button className="menu-clickable" onClick={this.refreshData} title="refresh"> <i className="fa fa-refresh" ></i>Refresh</button>
           <button > <i className="fa fa-info"></i></button>
           <button > <i className="fa fa-exclamation"></i></button>
-          <button onClick={this.onDelete}> <i className="fa fa-archive"></i></button>
+          <button className="menu-clickable" onClick={this.onDelete} title="delete"> <i className="fa fa-archive"></i></button>
           <div className="email-move-btn">
-          <button > <i className="fa fa-arrow-left"></i></button>
-          <button > <i className="fa fa-arrow-right"></i></button>
+            <button > <i className="fa fa-arrow-left"></i></button>
+            <button > <i className="fa fa-arrow-right"></i></button>
           </div>
         </div>
         <div>
           <table>
             <tbody>
-            {emaildata}
+              {emaildata}
             </tbody>
-            </table>
+          </table>
         </div>
       </div>
     );
