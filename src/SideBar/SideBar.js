@@ -11,7 +11,7 @@ class SideBar extends Component {
           <ul className="nav-container">
             <li>
               {expanded ?
-              <div className="profile-sec"><img src="dande.jpg" alt="loading..." /><span><bold>David Williams</bold></span><span>Art Director</span></div>
+              <div className="profile-sec"><img src="dande.jpg" alt="loading..." /><span><b>David Williams</b></span><span>Art Director</span></div>
               :<span className='text'>IN+</span>}
             </li>
             <li><i className="fa fa-th-large"></i>{expanded ? <span>Dashboards</span> : null}</li>
