@@ -5,6 +5,7 @@
 .content-container{
 flex-grow: 60;
 flex-direction: column;
+flex-shrink: 0;
 }
 
 .nav-bar{
