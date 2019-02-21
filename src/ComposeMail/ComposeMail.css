@@ -7,18 +7,19 @@
     width: 30%; /* Full width */
     height: 40%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: grey;
+    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 6px;
+    border-radius: 2px;
 }
 
 .compose h2{
-    background: white;
+    background: grey;
     margin-top: 0;
     border: 1px grey solid;
-    border-radius: 6px;
+    border-radius: 2px;
+    color: white;
 }
 
 .compose button{
@@ -29,16 +30,24 @@
 
 .compose table{
     display: flex;
-    flex-direction: column;
     flex-grow: 1;
+    padding: 5px;
 }
 
 .success-btn{
   background-color: #00a651;
 }
 
+.cancel-btn{
+    background-color: grey;
+}
+
 .compose button:hover{
     opacity: 0.6;
+}
+
+.compose td{
+    padding: 5px;
 }
 
 @media only screen and (max-width: 600px) {

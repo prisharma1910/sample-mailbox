@@ -66,19 +66,19 @@ class ComposeMail extends Component {
         <table>
           <tbody>
             <tr>
-              <td><label>To : </label></td>
+              <td><label>To  </label></td>
               <td><input name='to' value={this.state.to} onChange={this.updateTo} /></td>
             </tr>
             <tr>
-              <td><label>Cc : </label></td>
+              <td><label>Cc  </label></td>
               <td><input name='cc' value={this.state.cc} onChange={this.updateCc} /></td>
             </tr>
             <tr>
-              <td><label>Subject : </label></td>
+              <td><label>Subject  </label></td>
               <td><input name='subject' value={this.state.subject} onChange={this.updateSubject} /></td>
             </tr>
             <tr>
-              <td><label>Text : </label></td>
+              <td><label>Text  </label></td>
               <td><input name='text' value={this.state.text} onChange={this.updateText} /></td>
             </tr>
           </tbody>

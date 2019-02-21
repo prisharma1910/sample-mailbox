@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 class Menu extends Component {
 
   render() {
+    const inboxSelected = this.props.menuItemToshow === 'Inbox';
     return (
       <div className="menu">
         <button className="compose_button" onClick={this.props.showModal}>Compose Mail</button>
         <label className="menu-ul-headers">FOLDERS</label>
         <ul>
-          <li className="menu-clickable" onClick={() => this.props.updateMenuItemToshow('Inbox')}>Inbox</li>
-          <li className="menu-clickable" onClick={() => this.props.updateMenuItemToshow('Sent')}>Send email</li>
+          <li className={"menu-clickable "+ (inboxSelected ? "menu-selected" : "")} onClick={() => this.props.updateMenuItemToshow('Inbox')}>Inbox</li>
+          <li className={"menu-clickable " + (!inboxSelected ? "menu-selected" : "")}onClick={() => this.props.updateMenuItemToshow('Sent')}>Send email</li>
           <li>Important</li>
           <li>Drafts</li>
           <li>Trash</li>

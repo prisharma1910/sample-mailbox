@@ -42,16 +42,18 @@ class EmailContainer extends Component {
   }
 
   onDelete = () => {
-    const allData = this.fetchData();
-    let data = allData[this.props.userId];
-    if (Object.keys(data).length < 1) {
-      return;
+    if (this.props.menuItemToshow === 'Inbox') {
+      const allData = this.fetchData();
+      let data = allData[this.props.userId];
+      if (Object.keys(data).length < 1) {
+        return;
+      }
+      this.state.selected.forEach(id => {
+        delete data[id];
+      });
+      this.setData(allData);
+      this.props.updateNewMailsCount();
     }
-    this.state.selected.forEach(id => {
-      delete data[id];
-    });
-    this.setData(allData);
-    this.props.updateNewMailsCount();
   }
 
   refreshData = () => {

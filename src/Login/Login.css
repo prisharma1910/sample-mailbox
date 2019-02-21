@@ -1,27 +1,21 @@
-.login{
-    display: flex;
-    flex-direction: column;
-    margin: 10% 35% 0 35%;
+.hero.is-success {
+  background: #F2F6FA;
 }
-
-.login input{
-  width: 100%;
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.box {
+  margin-top: 5rem;
+}
+.avatar {
+  margin-top: -70px;
+  padding-bottom: 20px;
+}
+.avatar img {
   padding: 5px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.login button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 5px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-.login button:hover {
-    opacity: 0.8;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
