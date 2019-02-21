@@ -30,3 +30,8 @@
 .selected li{
     list-style: none;
 }
+
+.nav-container li:hover{
+    border-left: 6px solid green;
+    background-color: grey;
+}

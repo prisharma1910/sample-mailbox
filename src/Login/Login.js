@@ -41,8 +41,10 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-        <span> id</span><input name='email' value={this.state.email} onChange={this.updateEmail} />
-        <span>password</span><input name='password' type='password' value={this.state.password} onChange={this.updatePassword} />
+        <label for="uname"><b>Username   </b>[abc@gmail.com]</label>
+        <input name='email' value={this.state.email} onChange={this.updateEmail} />
+        <label for="psw"><b>Password   </b>[abc123]</label>
+        <input name='password' type='password' value={this.state.password} onChange={this.updatePassword} />
         <button onClick={this.doLogin}> login</button>
       </div>
     );

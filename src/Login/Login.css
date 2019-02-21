@@ -1,3 +1,27 @@
-.login input{
-    margin: 1em;
+.login{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 35% 0 35%;
 }
+
+.login input{
+  width: 100%;
+  padding: 5px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login button:hover {
+    opacity: 0.8;
+  }

@@ -10,9 +10,9 @@ class Menu extends Component {
         <ul>
           <li className="menu-clickable" onClick={() => this.props.updateMenuItemToshow('Inbox')}>Inbox</li>
           <li className="menu-clickable" onClick={() => this.props.updateMenuItemToshow('Sent')}>Send email</li>
-          <li>important</li>
-          <li>drafts</li>
-          <li>trash</li>
+          <li>Important</li>
+          <li>Drafts</li>
+          <li>Trash</li>
         </ul>
         <label className="menu-ul-headers">CATEGORIES</label>
         <ul>
