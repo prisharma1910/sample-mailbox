@@ -204,3 +204,7 @@ float: right;
 .bold{
     font-weight: bold;
 }
+
+.menu-clickable{
+    cursor: pointer;
+}

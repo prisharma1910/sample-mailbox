@@ -8,8 +8,8 @@ class Menu extends Component {
         <button className="compose_button" onClick={this.props.showModal}>Compose Mail</button>
         <label className="menu-ul-headers">FOLDERS</label>
         <ul>
-          <li onClick={() => this.props.updateMenuItemToshow('Inbox')}>Inbox</li>
-          <li onClick={() => this.props.updateMenuItemToshow('Sent')}>Send email</li>
+          <li className="menu-clickable" onClick={() => this.props.updateMenuItemToshow('Inbox')}>Inbox</li>
+          <li className="menu-clickable" onClick={() => this.props.updateMenuItemToshow('Sent')}>Send email</li>
           <li>important</li>
           <li>drafts</li>
           <li>trash</li>
