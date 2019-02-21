@@ -36,6 +36,7 @@
     font-size: small;
     font-stretch: extra-expanded;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .menu-ul-headers{

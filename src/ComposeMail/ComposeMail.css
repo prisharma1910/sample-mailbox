@@ -23,6 +23,7 @@
 
 .compose button{
     margin: 0 5px 5px 5px;
+    cursor: pointer;
 }
 
 .compose table{
