@@ -55,7 +55,7 @@ class Login extends Component {
               <p class="subtitle has-text-grey">Please login to proceed. <br/> Credentials: abc@gmail.com / abc123</p>
               <div class="box">
                 <figure class="avatar">
-                  <img src="https://placehold.it/128x128" />
+                  <img src="https://placehold.it/128x128" alt="loading..."/>
                 </figure>
                 <form>
                   <div class="field">
@@ -63,7 +63,6 @@ class Login extends Component {
                       <input class="input is-large" type="email" placeholder="Your Email" autofocus="" value={this.state.email} onChange={this.updateEmail} />
                     </div>
                   </div>
-
                   <div class="field">
                     <div class="control">
                       <input class="input is-large" type="password" placeholder="Your Password" value={this.state.password} onChange={this.updatePassword}/>
