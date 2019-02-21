@@ -105,7 +105,7 @@ class EmailContainer extends Component {
         <div>
           <table>
             <tbody>
-              {emaildata}
+              {emaildata.length < 1 ? <tr><td>No emails</td></tr> : emaildata}
             </tbody>
           </table>
         </div>
