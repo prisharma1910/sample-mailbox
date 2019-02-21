@@ -53,7 +53,7 @@ class ComposeMail extends Component {
       allData[cc][Math.floor((Math.random() * 1000) + 1)] = { subject, attachment: false, time: new Date().getUTCHours() + ':' + new Date().getUTCMinutes(), read: false, from: userId.slice(0, userId.indexOf('@')), text }
     }
 
-    sentData[this.props.userId][Math.floor((Math.random() * 1000) + 1)] = { subject, attachment: false, time: new Date().getUTCHours() + ':' + new Date().getUTCMinutes(), read: false, from: to.slice(0, userId.indexOf('@')), text }
+    sentData[this.props.userId][Math.floor((Math.random() * 1000) + 1)] = { subject, attachment: false, time: new Date().getUTCHours() + ':' + new Date().getUTCMinutes(), read: true, from: to.slice(0, userId.indexOf('@')), text }
     localStorage.setItem('emails', JSON.stringify(allData));
     localStorage.setItem('sent', JSON.stringify(sentData));
     this.props.toggleCompose();
@@ -65,22 +65,22 @@ class ComposeMail extends Component {
         <h2>Compose Email</h2>
         <table>
           <tbody>
-          <tr>
-            <td><label>To : </label></td>
-            <td><input name='to' value={this.state.to} onChange={this.updateTo} /></td>
-          </tr>
-          <tr>
-            <td><label>Cc : </label></td>
-            <td><input name='cc' value={this.state.cc} onChange={this.updateCc} /></td>
-          </tr>
-          <tr>
-            <td><label>Subject : </label></td>
-            <td><input name='subject' value={this.state.subject} onChange={this.updateSubject} /></td>
-          </tr>
-          <tr>
-            <td><label>Text : </label></td>
-            <td><input name='text' value={this.state.text} onChange={this.updateText} /></td>
-          </tr>
+            <tr>
+              <td><label>To : </label></td>
+              <td><input name='to' value={this.state.to} onChange={this.updateTo} /></td>
+            </tr>
+            <tr>
+              <td><label>Cc : </label></td>
+              <td><input name='cc' value={this.state.cc} onChange={this.updateCc} /></td>
+            </tr>
+            <tr>
+              <td><label>Subject : </label></td>
+              <td><input name='subject' value={this.state.subject} onChange={this.updateSubject} /></td>
+            </tr>
+            <tr>
+              <td><label>Text : </label></td>
+              <td><input name='text' value={this.state.text} onChange={this.updateText} /></td>
+            </tr>
           </tbody>
         </table>
         <span>

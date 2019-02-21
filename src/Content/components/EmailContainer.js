@@ -63,11 +63,12 @@ class EmailContainer extends Component {
   }
 
   updateEmailStatus = (id) => {
-    let allData = this.fetchData();
-    allData[this.props.userId][id].read = true;
-    this.setData(allData);
-    this.props.updateNewMailsCount();
-
+    if (this.props.menuItemToshow === 'Inbox') {
+      let allData = this.fetchData();
+      allData[this.props.userId][id].read = true;
+      this.setData(allData);
+      this.props.updateNewMailsCount();
+    }
   }
 
   render() {

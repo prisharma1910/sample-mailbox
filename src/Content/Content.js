@@ -29,7 +29,7 @@ class Content extends Component {
         return (
             <div className={this.props.expanded ? 'main-container expanded' : 'main-container not-expanded'} >
                 <Menu showModal={this.showCompose} updateMenuItemToshow={this.updateMenuItemToshow} />
-                <EmailContainer userId={this.props.userId} menuItemToshow={this.state.menuItemToshow} updateNewMailsCount={this.props.updateNewMailsCount}/>
+                <EmailContainer userId={this.props.userId} menuItemToshow={this.state.menuItemToshow} updateNewMailsCount={this.props.updateNewMailsCount} />
                 {this.state.newEmail ? <ComposeMail toggleCompose={this.showCompose} userId={this.props.userId} /> : null}
             </div>
         );
