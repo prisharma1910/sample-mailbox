@@ -7,14 +7,6 @@
     flex-direction: row;
 }
 
-.expanded{
-    
-}
-
-.not-expanded{
-    
-}
-
 .menu{
     flex-direction: column;
     display: flex;
@@ -37,6 +29,10 @@
     font-stretch: extra-expanded;
     margin-bottom: 1em;
     cursor: pointer;
+}
+
+.compose_button:hover{
+    opacity: 0.8;
 }
 
 .menu-ul-headers{
@@ -131,6 +127,11 @@ float: right;
     color:#8c8c8c;
 }
 
+.email-sub-header button:hover, .email-sub-header i:hover{
+    color: black;
+    z-index: 10;
+}
+
 .email-move-btn{
     float:right;
 }
@@ -179,6 +180,7 @@ float: right;
     height: 16px;
     border: 1px solid #dedede;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .checkbox-custom[type=checkbox]:before {

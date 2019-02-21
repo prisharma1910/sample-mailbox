@@ -84,8 +84,8 @@ class ComposeMail extends Component {
           </tbody>
         </table>
         <span>
-          <button onClick={this.sendMail}> Send Email</button>
-          <button onClick={this.props.toggleCompose}> Cancel</button>
+          <button onClick={this.sendMail} className="success-btn"> Send Email</button>
+          <button onClick={this.props.toggleCompose} className="cancel-btn"> Cancel</button>
         </span>
       </div>
     );

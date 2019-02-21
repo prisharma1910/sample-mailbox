@@ -93,7 +93,7 @@ class EmailContainer extends Component {
           </div>
         </div>
         <div className="email-sub-header">
-          <button className="menu-clickable" onClick={this.refreshData} title="refresh"> <i className="fa fa-refresh" ></i>Refresh</button>
+          <button className="menu-clickable" onClick={this.refreshData} title="refresh"> <i className="fa fa-refresh">   Refresh</i></button>
           <button > <i className="fa fa-info"></i></button>
           <button > <i className="fa fa-exclamation"></i></button>
           <button className="menu-clickable" onClick={this.onDelete} title="delete"> <i className="fa fa-archive"></i></button>

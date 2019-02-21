@@ -22,8 +22,9 @@
 }
 
 .compose button{
-    margin: 0 5px 5px 5px;
+    margin: 0 8px 10px 8px;
     cursor: pointer;
+    border: 1px solid lightgrey;
 }
 
 .compose table{
@@ -32,10 +33,18 @@
     flex-grow: 1;
 }
 
+.success-btn{
+  background-color: #00a651;
+}
+
+.compose button:hover{
+    opacity: 0.6;
+}
+
 @media only screen and (max-width: 600px) {
     .compose {
         width: 75vw;
         height: 25%;
         top: 50vh;
     }
-  }
+}

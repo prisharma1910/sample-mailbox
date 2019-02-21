@@ -38,6 +38,10 @@ justify-content: flex-end;
   background-color: #00a651;
 }
 
+.nav-btn:hover{
+  opacity: 0.8;
+}
+
 .searchTerm {
   flex-grow: 100;
   outline: none;
@@ -91,4 +95,8 @@ justify-content: flex-end;
   padding: 0 0.2em 0 0.2em;
   color: white;
   font: 1em;
+}
+
+.logOutButton:hover, .messageButton:hover, .bellButton:hover {
+  opacity: 0.8;
 }

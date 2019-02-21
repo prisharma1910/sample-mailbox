@@ -32,6 +32,5 @@
 }
 
 .nav-container li:hover{
-    border-left: 6px solid green;
     background-color: grey;
 }
