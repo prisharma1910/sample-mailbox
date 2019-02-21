@@ -34,3 +34,7 @@
 .nav-container li:hover{
     background-color: grey;
 }
+
+.profile-sec img{
+    margin-left: 2em;
+}
